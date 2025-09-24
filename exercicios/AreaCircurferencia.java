@@ -1,6 +1,6 @@
 import java.util.Scanner; // Importa a classe Scanner para ler a entrada do usuário
 
-public class AreaCircunferencia {
+public class AreaCircurferencia {
 
     public static void main(String[] args) {
 
