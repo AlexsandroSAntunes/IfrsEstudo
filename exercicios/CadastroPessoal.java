@@ -9,6 +9,8 @@ public class CadastroPessoal{
         double altura;
         boolean programacao;
 
+        
+
         Scanner sc = new Scanner(System.in);
 
          System.out.println("Digite seu nome:");
@@ -19,9 +21,17 @@ public class CadastroPessoal{
         
          System.out.println("Digite sua altura:" );
          altura = sc.nextDouble();
+          sc.nextLine();
 
-         System.out.println("Você gosta de programação? true/false:" );
-         programacao = sc.nextBoolean();
+         System.out.println("Você gosta de programação? (sim/não):" );
+         String respostaString = sc.nextLine();
+         
+        if (respostaString.equalsIgnoreCase("sim")) {
+         
+            programacao = true;
+        } else {
+            programacao = false;
+        }
 
         System.out.println("____Dados Cadastrais____");
         System.out.println("Seu nome é "+ nome);
@@ -33,3 +43,4 @@ public class CadastroPessoal{
         
     }
 }
+
